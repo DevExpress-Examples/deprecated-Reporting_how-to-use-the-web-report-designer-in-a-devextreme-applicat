@@ -1,0 +1,9 @@
+{
+  "name": "DevExtremeApp",
+  "dependencies": {
+    "xtrareportsjs": "17.1.2-beta.1"
+  },
+  "resolutions": {
+    "devextreme": "17.1.2-beta"
+  }
+}
