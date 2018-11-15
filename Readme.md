@@ -1,3 +1,17 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [app.config.js](./CS/ClientSideDevExtremeProject/app.config.js) (VB: [app.config.js](./VB/ClientSideDevExtremeProject/app.config.js))
+* [bower.json](./CS/ClientSideDevExtremeProject/bower.json) (VB: [bower.json](./VB/ClientSideDevExtremeProject/bower.json))
+* [index.html](./CS/ClientSideDevExtremeProject/index.html) (VB: [index.html](./VB/ClientSideDevExtremeProject/index.html))
+* [reportDesigner.html](./CS/ClientSideDevExtremeProject/views/reportDesigner.html) (VB: [reportDesigner.html](./VB/ClientSideDevExtremeProject/views/reportDesigner.html))
+* **[reportDesigner.js](./CS/ClientSideDevExtremeProject/views/reportDesigner.js) (VB: [reportDesigner.js](./VB/ClientSideDevExtremeProject/views/reportDesigner.js))**
+* [QueryBuilderController.cs](./CS/ServerSide/Controllers/QueryBuilderController.cs) (VB: [QueryBuilderController.vb](./VB/ServerSide/Controllers/QueryBuilderController.vb))
+* [ReportDesignerController.cs](./CS/ServerSide/Controllers/ReportDesignerController.cs) (VB: [ReportDesignerController.vb](./VB/ServerSide/Controllers/ReportDesignerController.vb))
+* [WebDocumentViewerController.cs](./CS/ServerSide/Controllers/WebDocumentViewerController.cs) (VB: [WebDocumentViewerController.vb](./VB/ServerSide/Controllers/WebDocumentViewerController.vb))
+* [Global.asax.cs](./CS/ServerSide/Global.asax.cs) (VB: [Global.asax.vb](./VB/ServerSide/Global.asax.vb))
+* [MyReportStorage.cs](./CS/ServerSide/MyReportStorage.cs) (VB: [MyReportStorage.vb](./VB/ServerSide/MyReportStorage.vb))
+<!-- default file list end -->
 # How to use the Web Report Designer in a DevExtreme application
 
 <strong>Important:</strong>&nbsp;<br>Starting with v18.1, the DevExtreme hybrid mobile-related tools and the demonstrated integration approach are deprecated. See <a href="https://community.devexpress.com/blogs/aspnet/archive/2018/02/26/devextreme-hybrid-mobile-tools-deprecation-in-v18-1.aspx">this blog post</a> for more information.<br>
