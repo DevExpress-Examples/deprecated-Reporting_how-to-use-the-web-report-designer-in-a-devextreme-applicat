@@ -1,3 +1,15 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [QueryBuilderController.cs](./CS/BackendMvcProject/Controllers/QueryBuilderController.cs) (VB: [QueryBuilderController.vb](./VB/BackendMvcProject/Controllers/QueryBuilderController.vb))
+* [ReportDesignerController.cs](./CS/BackendMvcProject/Controllers/ReportDesignerController.cs) (VB: [ReportDesignerController.vb](./VB/BackendMvcProject/Controllers/ReportDesignerController.vb))
+* [WebDocumentViewerController.cs](./CS/BackendMvcProject/Controllers/WebDocumentViewerController.cs) (VB: [WebDocumentViewerController.vb](./VB/BackendMvcProject/Controllers/WebDocumentViewerController.vb))
+* [app.config.js](./CS/FrontendDevExtremeProject/app.config.js) (VB: [app.config.js](./VB/FrontendDevExtremeProject/app.config.js))
+* [bower.json](./CS/FrontendDevExtremeProject/bower.json) (VB: [bower.json](./VB/FrontendDevExtremeProject/bower.json))
+* [index.html](./CS/FrontendDevExtremeProject/index.html) (VB: [index.html](./VB/FrontendDevExtremeProject/index.html))
+* [reportDesigner.html](./CS/FrontendDevExtremeProject/views/reportDesigner.html) (VB: [reportDesigner.html](./VB/FrontendDevExtremeProject/views/reportDesigner.html))
+* **[reportDesigner.js](./CS/FrontendDevExtremeProject/views/reportDesigner.js) (VB: [reportDesigner.js](./VB/FrontendDevExtremeProject/views/reportDesigner.js))**
+<!-- default file list end -->
 # How to use the Web Report Designer in a DevExtreme application
 
 
