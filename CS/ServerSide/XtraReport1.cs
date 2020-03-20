@@ -72,7 +72,6 @@ namespace ServerSide {
             this.sqlDataSource1.ConnectionName = "Northwind_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
             columnExpression1.ColumnName = "ProductID";
-            table1.MetaSerializable = null;
             table1.Name = "Products";
             columnExpression1.Table = table1;
             column1.Expression = columnExpression1;
@@ -117,7 +116,6 @@ namespace ServerSide {
             selectQuery1.Columns.Add(column9);
             selectQuery1.Columns.Add(column10);
             selectQuery1.Columns.Add(column11);
-            selectQuery1.MetaSerializable = null;
             selectQuery1.Name = "Products";
             selectQuery1.Tables.Add(table1);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
@@ -126,7 +124,6 @@ namespace ServerSide {
             // 
             // topMarginBand1
             // 
-            this.topMarginBand1.HeightF = 100F;
             this.topMarginBand1.Name = "topMarginBand1";
             // 
             // bottomMarginBand1
@@ -134,27 +131,26 @@ namespace ServerSide {
             this.bottomMarginBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrPageInfo1,
             this.xrPageInfo2});
-            this.bottomMarginBand1.HeightF = 100F;
             this.bottomMarginBand1.Name = "bottomMarginBand1";
             // 
             // xrPageInfo1
             // 
             this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(6F, 6F);
             this.xrPageInfo1.Name = "xrPageInfo1";
-            this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrPageInfo1.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
             this.xrPageInfo1.SizeF = new System.Drawing.SizeF(313F, 23F);
             this.xrPageInfo1.StyleName = "PageInfo";
             // 
             // xrPageInfo2
             // 
-            this.xrPageInfo2.Format = "Page {0} of {1}";
             this.xrPageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(331F, 6F);
             this.xrPageInfo2.Name = "xrPageInfo2";
-            this.xrPageInfo2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrPageInfo2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrPageInfo2.SizeF = new System.Drawing.SizeF(313F, 23F);
             this.xrPageInfo2.StyleName = "PageInfo";
             this.xrPageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrPageInfo2.TextFormatString = "Page {0} of {1}";
             // 
             // reportHeaderBand1
             // 
@@ -167,7 +163,7 @@ namespace ServerSide {
             // 
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(6F, 6F);
             this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel1.SizeF = new System.Drawing.SizeF(638F, 26F);
             this.xrLabel1.StyleName = "Title";
             this.xrLabel1.Text = "Products";
@@ -258,8 +254,8 @@ namespace ServerSide {
             // 
             // xrTableCell4
             // 
-            this.xrTableCell4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.ProductName")});
+            this.xrTableCell4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ProductName]")});
             this.xrTableCell4.Name = "xrTableCell4";
             this.xrTableCell4.StyleName = "DetailData3";
             this.xrTableCell4.Text = "xrTableCell4";
@@ -267,19 +263,20 @@ namespace ServerSide {
             // 
             // xrTableCell5
             // 
-            this.xrTableCell5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.UnitPrice", "{0:C2}")});
+            this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitPrice]")});
             this.xrTableCell5.Name = "xrTableCell5";
             this.xrTableCell5.StyleName = "DetailData3";
             this.xrTableCell5.StylePriority.UseTextAlignment = false;
             this.xrTableCell5.Text = "xrTableCell5";
             this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell5.TextFormatString = "{0:C2}";
             this.xrTableCell5.Weight = 0.26377953162560097D;
             // 
             // xrTableCell6
             // 
-            this.xrTableCell6.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Products.UnitsOnOrder")});
+            this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitsOnOrder]")});
             this.xrTableCell6.Name = "xrTableCell6";
             this.xrTableCell6.StyleName = "DetailData3";
             this.xrTableCell6.StylePriority.UseTextAlignment = false;
@@ -362,10 +359,11 @@ namespace ServerSide {
             this.DetailData3_Odd,
             this.DetailCaptionBackground3,
             this.PageInfo});
-            this.Version = "17.1";
+            this.Version = "19.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+
         }
 
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;

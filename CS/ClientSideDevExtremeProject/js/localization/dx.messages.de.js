@@ -1,9 +1,9 @@
 /*!
 * DevExtreme (dx.messages.de.js)
-* Version: 17.1.7 (build 17275)
-* Build date: Mon Oct 02 2017
+* Version: 17.2.13
+* Build date: Tue Mar 12 2019
 *
-* Copyright (c) 2012 - 2017 Developer Express Inc. ALL RIGHTS RESERVED
+* Copyright (c) 2012 - 2019 Developer Express Inc. ALL RIGHTS RESERVED
 * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
 */
 "use strict";
@@ -14,7 +14,11 @@
             factory(require("devextreme/localization"))
         })
     } else {
-        factory(DevExpress.localization)
+        if ("object" === typeof module && module.exports) {
+            factory(require("devextreme/localization"))
+        } else {
+            factory(DevExpress.localization)
+        }
     }
 }(this, function(localization) {
     localization.loadMessages({
@@ -214,6 +218,7 @@
             "dxScheduler-confirmRecurrenceEditOccurrence": "Termin bearbeiten",
             "dxScheduler-confirmRecurrenceDeleteOccurrence": "Termin löschen",
             "dxScheduler-noTimezoneTitle": "Keine Zeitzone",
+            "dxScheduler-moreAppointments": "{0} weitere",
             "dxCalendar-todayButtonText": "Heute",
             "dxCalendar-ariaWidgetName": "Kalendar",
             "dxColorView-ariaRed": "Rot",
@@ -221,9 +226,31 @@
             "dxColorView-ariaBlue": "Blau",
             "dxColorView-ariaAlpha": "Transparenz",
             "dxColorView-ariaHex": "Farbwert",
+            "dxTagBox-selected": "{0} ausgewählt",
+            "dxTagBox-allSelected": "Alle ausgewählt ({0})",
+            "dxTagBox-moreSelected": "{0} weitere",
             "vizExport-printingButtonText": "Drucken",
             "vizExport-titleMenuText": "Export/Druck",
-            "vizExport-exportButtonText": "{0}-Datei"
+            "vizExport-exportButtonText": "{0}-Datei",
+            "dxFilterBuilder-and": "Und",
+            "dxFilterBuilder-or": "Oder",
+            "dxFilterBuilder-notAnd": "Nicht Und",
+            "dxFilterBuilder-notOr": "Nicht Oder",
+            "dxFilterBuilder-addCondition": "Bedingung hinzufügen",
+            "dxFilterBuilder-addGroup": "Gruppe hinzufügen",
+            "dxFilterBuilder-enterValueText": "<Wert eingeben>",
+            "dxFilterBuilder-filterOperationEquals": "Ist gleich",
+            "dxFilterBuilder-filterOperationNotEquals": "Ist nicht gleich",
+            "dxFilterBuilder-filterOperationLess": "Kleiner als",
+            "dxFilterBuilder-filterOperationLessOrEquals": "Kleiner oder gleich",
+            "dxFilterBuilder-filterOperationGreater": "Größer als",
+            "dxFilterBuilder-filterOperationGreaterOrEquals": "Größer oder gleich",
+            "dxFilterBuilder-filterOperationStartsWith": "Beginnt mit",
+            "dxFilterBuilder-filterOperationContains": "Enthält",
+            "dxFilterBuilder-filterOperationNotContains": "Enthält nicht",
+            "dxFilterBuilder-filterOperationEndsWith": "Endet mit",
+            "dxFilterBuilder-filterOperationIsBlank": "Ist leer",
+            "dxFilterBuilder-filterOperationIsNotBlank": "Ist nicht leer"
         }
     })
 });
